@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/onBoardingIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:backgroundTint="?attr/colorSecondaryVariant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/ic_onboarding_1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/onBoardingTitle"
+        android:textColor="?attr/colorOnSecondary"
+        app:layout_constraintTop_toBottomOf="@+id/onBoardingIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        style="?attr/textAppearanceHeadline5"
+        tools:text="OnBoardingScreen 1"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/onBoardingDescription"
+        app:layout_constraintTop_toBottomOf="@id/onBoardingTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        style="?attr/textAppearanceBody2"
+        android:layout_marginHorizontal="32dp"
+        android:gravity="center"
+        android:textColor="?attr/colorOnSecondary"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam corporis deleniti dolor dolores dolorum ducimus et facere hic id illo in, inventore ipsa iste maxime nihil nisi nulla odio odit officiis possimus quaerat unde vitae."/>
+</androidx.constraintlayout.widget.ConstraintLayout>

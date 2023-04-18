@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Reddit" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/reddit_color_primary</item>
+        <item name="colorPrimaryVariant">@color/dark_surface</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/dark_surface</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorOnPrimarySurface">@color/blue</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorSurface">@color/dark</item>
+        <!--this is to change the shape of the MDC EditText-->
+        <item name="shapeAppearanceSmallComponent">@style/MyTextInputLayout</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.HumblrDesign.Subreddit.Headline6</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.HumblrDesign.User.Headline5</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.HumblrDesign.User.Headline4</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.HumblrDesign.User.Headline.Avatar</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.HumblrDesign.User.Headline3</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.HumblrDesign.Subreddit.Body2</item>
+        <item name="textAppearanceHeadline1">@style/TextAppearance.HumblrDesign.User.Headline3</item>
+        <item name="android:buttonStyle">@style/ButtonStyleExit</item>
+        <item name="android:buttonBarStyle">@style/ButtonStyleRegular</item>
+        <item name="textAppearanceButton">@style/Widget.MaterialComponents.Button.TextButton</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.App.MaterialAlertDialog</item>
+    </style>
+</resources>

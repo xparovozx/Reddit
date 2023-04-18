@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#BD89FD</color>
+    <color name="purple_500">#6301EF</color>
+    <color name="purple_700">#3A01BA</color>
+    <color name="teal_200">#03D8C3</color>
+    <color name="teal_700">#018382</color>
+    <color name="black">#121212</color>
+    <color name="dark">#27292C</color>
+    <color name="blue">#3a7ae0</color>
+    <color name="dark_surface">#18121c</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bnv_color_on_primary">#754AE6</color>
+    <color name="reddit_color_primary">#5222D0</color>
+    <color name="reddit_color_primary_alpha">#205222D0</color>
+    <color name="reddit_color_onboarding_btn">#504E21C5</color>
+    <color name="reddit_color_unsubscribed">#505222D0</color>
+    <color name="reddit_color_subscribed">#30E8605A</color>
+    <color name="reddit_color_background_light">#10511FD3</color>
+    <color name="reddit_text_color_default">#808080</color>
+    <color name="reddit_text_color_btn_exit">#DB5953</color>
+</resources>

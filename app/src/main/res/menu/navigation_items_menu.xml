@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/newsFragment"
+        android:checked="true"
+        android:enabled="true"
+        android:icon="@drawable/ic_news"
+        android:title="@string/news" />
+    <item
+        android:id="@+id/subredditsFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_subreddits"
+        android:title="@string/subreddits" />
+    <item
+        android:id="@+id/profileFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_redditor_profile"
+        android:title="@string/profile" />
+</menu>

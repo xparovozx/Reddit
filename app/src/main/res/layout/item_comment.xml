@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/lastCommentCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:checkable="true"
+    android:clickable="true"
+    android:focusable="true"
+    android:visibility="visible"
+    app:cardElevation="0dp"
+    tools:cardCornerRadius="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:id="@+id/separatorContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        android:orientation="horizontal"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/firstCommentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/commentAvatar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+        <TextView
+            android:id="@+id/commentatorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="?attr/colorOnPrimarySurface"
+            app:layout_constraintBottom_toBottomOf="@id/commentAvatar"
+            app:layout_constraintStart_toEndOf="@id/commentAvatar"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="qwertTyeT" />
+        <TextView
+            android:id="@+id/commentedAtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/commentAvatar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="опубликовано 5 часов назад" />
+        <TextView
+            android:id="@+id/textOfComment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:textAppearance="?attr/textAppearanceBody2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/commentatorName"
+            app:layout_constraintTop_toBottomOf="@id/commentAvatar"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam corporis deleniti dolor dolores dolorum ducimus et facere hic id illo in, inventore ipsa iste maxime nihil nisi nulla odio odit officiis possimus quaerat unde vitae." />
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:src="?attr/colorOnSecondary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textOfComment"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/commentAvatar" />
+        <ImageView
+            android:id="@+id/upComemnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_up_comment"
+            app:layout_constraintStart_toStartOf="@+id/textOfComment"
+            app:layout_constraintTop_toBottomOf="@+id/textOfComment" />
+        <TextView
+            android:id="@+id/ratingComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:textColor="?attr/colorOnSecondary"
+            app:layout_constraintStart_toEndOf="@+id/upComemnt"
+            app:layout_constraintTop_toBottomOf="@id/textOfComment"
+            tools:text="5,6k" />
+        <ImageView
+            android:id="@+id/downComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_down_comment"
+            app:layout_constraintStart_toEndOf="@id/ratingComment"
+            app:layout_constraintTop_toBottomOf="@id/textOfComment" />
+        <ImageView
+            android:id="@+id/downloadBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/ic_download"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/downComment"
+            app:layout_constraintTop_toBottomOf="@+id/textOfComment" />
+        <TextView
+            android:id="@+id/downloadText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/download_txt"
+            app:layout_constraintStart_toEndOf="@+id/downloadBtn"
+            app:layout_constraintTop_toBottomOf="@id/textOfComment" />
+        <ImageView
+            android:id="@+id/answerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_answer"
+            app:layout_constraintEnd_toStartOf="@+id/answerText"
+            app:layout_constraintTop_toBottomOf="@+id/textOfComment" />
+        <TextView
+            android:id="@+id/answerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/answer_txt"
+            app:layout_constraintEnd_toEndOf="@id/textOfComment"
+            app:layout_constraintTop_toBottomOf="@id/textOfComment" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
